@@ -1,0 +1,337 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+:root{
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+--white: #ffff
+}
+
+
+body{
+  min-height: 100vh;
+  font-family: 'Bai Jamjuree', sans-serif;
+  text-align: center;
+  
+}
+
+h1{
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin: 60px 0 0;
+  padding: 0 40px;
+}
+
+h2{
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 600;
+  font-size: 1.7rem;
+  padding: 0 30px;
+}
+
+h3{
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+p{
+  color: var(--Grayish-Blue);
+  font-size: 1.125rem;
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+.firstsection{
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  padding: 100px 15px;
+}
+
+.firstsection > img{
+  margin: 0 auto;
+  width: 30%;
+}
+
+.multiButtons{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px 0 120px;
+}
+
+button{
+  width: 90%;
+  margin: 0 auto;
+  color: var(--white);
+  padding: 15px 0;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+    box-shadow: -4px -4px 0px 0px rgba(0, 0, 0, 0.179) inset;
+}
+
+.iosbutton{
+  background-color: var(--Strong-Cyan);
+}
+
+.iosbutton:hover{
+  background-color:  hsla(171, 66%, 44%, 0.797);
+}
+
+.macbutton{
+  background-color: var(--Light-Blue);
+}
+
+.macbutton:hover{
+  background-color: hsla(233, 100%, 69%, 0.797);
+}
+
+.details{
+  margin-bottom: 160px;
+}
+
+.details > img {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.somedetails{
+  margin-top: 50px;
+}
+
+.somedetails > p {
+  padding: 0 20px;
+}
+
+.access{
+  margin-bottom: 80px;
+}
+
+.access > p{
+    margin-bottom: 50px;
+}
+
+.access > img{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.todo-box{
+  margin: 100px 0;
+}
+
+
+.todoList{
+  margin-top: 55px;
+}
+
+.todoList > img{
+  margin: 0 auto 40px;
+}
+
+.thelogos {
+  margin: 120px 0;
+}
+
+.thelogos > img {
+  width: 32%;
+  margin: 0 auto 50px;
+}
+
+.companylogobox > p {
+  padding: 0 16px;
+}
+
+footer{
+  background-color:  hsla(202, 11%, 66%, 0.249);
+    padding: 50px 0;
+}
+
+footer > img {
+  width: 15%;
+  margin: 0 auto;
+
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.links > a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.links > a:hover{
+  color:hsl(171, 66%, 44%);
+}
+
+
+.socials {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+
+}
+
+
+@media screen and (min-width: 62.5rem) {
+  
+
+  h1{
+    font-size: 2.5rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  p{
+     line-height: 2rem;
+  }
+
+  .firstsection{
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+padding: 140px 15px;
+}
+
+.firstsection > img{
+  margin: 0 auto;
+  width: 10%;
+}
+
+.headertext {
+  padding: 0 27% ;
+}
+
+.tracktest{
+  padding: 0  25%;
+}
+
+.multiButtons{
+  width: 40%;
+  gap: 20px;
+  margin: 40px auto 180px;
+  flex-direction: row;
+}
+
+.details{
+  display: flex;
+  gap: 100px;
+  width: 90%;
+  position: relative;
+  right: 80px;
+}
+
+.detailsText{
+  align-self: center;
+  text-align: left;
+}
+
+.somedetails > p {
+  padding-left: 0;
+  padding-right: 17%;
+ 
+}
+
+.somedetails{
+  margin-top: 0;
+}
+
+.somedetails + .somedetails {
+  margin-top: 40px;
+}
+
+.access > p{
+      margin-bottom: 100px;
+padding: 0 25%;
+}
+
+.access > img{
+  width: 65%;
+}
+
+.todo-box{
+  display: flex;
+  justify-content: space-between;
+  width: 82%;
+  margin: 100px auto;
+}
+
+.todoList{
+  margin-top: 0;
+  width: 33%;
+}
+
+.todoList > img{
+ height: 44px;
+}
+
+
+.thelogos{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 82%;
+  margin: 140px auto;
+}
+
+.thelogos > img {
+  width: 10%;
+  align-self: center;
+}
+
+.companylogobox > p {
+  padding: 0 27%;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 120px;
+  align-items: center;
+}
+
+footer > img {
+  width: 5%;
+  margin: 0;
+}
+
+.links{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 0;
+  text-align: left;
+  width: 50%;
+}
+
+.links > a {
+margin: 8px 0 ;
+}
+
+.socials{
+  width: 10%;
+  margin: 0;
+}
+}
